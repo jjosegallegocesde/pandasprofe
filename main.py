@@ -17,6 +17,13 @@ empleados=crearEmpleados()
 tabla3=pd.DataFrame(empleados)
 
 
+datos = pd.DataFrame([165, 170, 158, 172, 175, 168, 163, 169, 166, 174, 180],columns=['estaturas'])
+moda = datos['estaturas'].mode()
+media = datos['estaturas'].mean()
+mediana = datos['estaturas'].median()
+desviacion_estandar = datos['estaturas'].std()
+
+
 '''print("\n")
 print(tabla2.head())
 
